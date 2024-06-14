@@ -1,0 +1,41 @@
+{
+    "criteria": 
+    {
+        "drunk_xp_potion": 
+        {
+            "trigger": "minecraft:consume_item",
+            "conditions": 
+            {
+                "item": 
+                {
+                    "nbt": "{ItemID: \"mero_cft:xp_potion\"}"
+                }
+            }
+        }
+    }, 
+    
+    "display": 
+    {
+        "icon": 
+        {
+            "item": "minecraft:potion"
+        },
+        "announce_to_chat": false,
+        "title": "",
+        "description": "",
+        "hidden": true,
+        "show_toast": false
+    },
+
+    "rewards": 
+    {
+        "function": "mero_cft:events/items/xp_potion/trigger"
+    },
+
+    "requirements": 
+    [
+        [
+            "drunk_xp_potion"
+        ]
+    ]
+}

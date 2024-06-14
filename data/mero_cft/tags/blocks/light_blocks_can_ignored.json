@@ -1,0 +1,11 @@
+{
+    "values": 
+    [
+        "minecraft:torch",
+        "minecraft:redstone_torch",
+        "minecraft:soul_torch",
+        "minecraft:light",
+        "minecraft:lantern",
+        "minecraft:soul_lantern"
+    ]
+}

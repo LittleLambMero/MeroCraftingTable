@@ -1,0 +1,8 @@
+{
+    "values": 
+    [
+        "mero_cft:auto_install",
+        "mero_cft:main/main", 
+        "mero_cft:events/run"
+    ]
+}

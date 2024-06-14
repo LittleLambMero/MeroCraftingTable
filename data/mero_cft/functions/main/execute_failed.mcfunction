@@ -1,0 +1,1 @@
+tellraw @s [{"text": "函式執行失敗", "color": "#E51E00"}]

@@ -1,0 +1,2 @@
+# == 檢查是否滿足放置條件 == #
+execute if block ~ ~ ~ minecraft:air if block ~1 ~ ~ #mero_cft:ignored_block if block ~ ~ ~1 #mero_cft:ignored_block if block ~-1 ~ ~ #mero_cft:ignored_block if block ~ ~ ~-1 #mero_cft:ignored_block if block ~1 ~ ~1 #mero_cft:ignored_block if block ~-1 ~ ~1 #mero_cft:ignored_block if block ~1 ~ ~-1 #mero_cft:ignored_block if block ~-1 ~ ~-1 #mero_cft:ignored_block run tag @s add MeroCraftingTable_EasterEggReward_CheckPassed

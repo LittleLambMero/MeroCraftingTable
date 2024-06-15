@@ -1,0 +1,1 @@
+data modify block ~ ~ ~-1 front_text.messages[0] set value '{"text": "解構", "color": "red", "clickEvent": {"action": "run_command", "value": "/execute as @e[type = minecraft:marker, tag = MeroCraftingTable_MainBody, sort = nearest, limit = 1] at @s align xyz run function mero_cft:main/panels/destroy/main"}}'

@@ -66,14 +66,23 @@ function mero_cft:recipes/items/xp_potion/get
 # 更新版本歷史
 <details>
     <summary>v2.0</summary>
+    
     - 將資料包的遊戲運行版本從 1.20.4 提升至 1.21
+    
     - 「經驗藥水」的堆疊數量從1個提升為16個
+    
 </details>
 <details>
     <summary>v1.0</summary>
+    
     - 更新了 1 個挑戰成就
+    
     - 包含 3 個資料包物品
+    
     - 新增「一鍵合成」功能
+    
     - 添加例外事件處理 >>> 當合成檯、經驗產生器被意外破壞時啟動相關處理程序
+    
     - 針對更新至 1.20.4 的資料包「進度」改動內容進行修復
+    
 </details>

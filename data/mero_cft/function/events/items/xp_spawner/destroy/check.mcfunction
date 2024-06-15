@@ -1,0 +1,1 @@
+execute if entity @e[type = minecraft:text_display, tag = MeroCraftingTable_ExpSpawner, distance = ..0.5, sort = nearest, limit = 1] if block ~ ~-1 ~ minecraft:spawner run tag @s add MeroCraftingTable_CheckPassed

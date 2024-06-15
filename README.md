@@ -31,14 +31,14 @@
 ## 關於自定義合成配方
 其他資料包也可以在此資料包註冊自己的合成配方函數來達成物品合成的功能，以下提供操作步驟（建議）：（以下使用「資料包A」做代稱）
 1. 為了方便配方表管理，請在 A 的「function（**1.21以上**）／functions（**1.21以下**）」資料夾建立一個「recipes」資料夾
-2. 在 recipes 中建立「branch.mcfunction」或任意名稱的函數作為管理所有配方表函數的總函數
+2. 在 recipes 中建立「recipes_manager.mcfunction」或任意名稱的函數作為管理所有配方表函數的總函數
 3. 在本資料包中的「recipes/register.mcfunction」函數中向下新增指令，舉例如下：<br>
 ```mcfunction
 # 該指令可以在檢測到配方之後結束執行，一來可以減少指令執行延遲，二來可以避免不同資料包之間的相同配方衝突問題
 execute if score @s PlayerCraftingSuccessedStatus matches 1 run return 0
-function example:recipes/branch
+function example:recipes/recipes_manager
 ```
-4. branch 函數需要呼叫資料包A的所有合成配方，這裡由開發者自行發揮
+4. recipes_manager 函數需要呼叫資料包A的所有合成配方，這裡由開發者自行發揮
 
 更詳細的例子可以直接參考本資料包中的函數結構，也許能幫助到您。
 ## 如何設定配方表
@@ -54,26 +54,26 @@ execute if block ~ ~ ~ minecraft:dropper{Items: [{Slot: 1b, id: "minecraft:exper
 而這是該配方表的模樣：<br>
 ![經驗藥水合成表](https://i.imgur.com/ngTufgQ.png)<br>
 您可以在**Minecraft Wiki**中找到相關的教學內容。<p>
-當合成台順利檢測到配方之後，您必須呼叫下一個函數，在本資料包中命名為「successed.mcfunction」。該函數的作用是「消耗合成台中的物品數量，並讓系統知道合成成功，再給予玩家物品」，以下是「經驗藥水」的 successed.mcfunction 指令：<br>
+當合成台順利檢測到配方之後，您必須呼叫下一個函數，在本資料包中命名為「successed.mcfunction」。該函數的作用是「消耗合成台中的物品數量，並讓系統知道合成成功，再給予玩家物品」，以下是「經驗藥水」的 successed.mcfunction 內容：<br>
 ```mcfunction
-function mero_cft:recipes/default_decrease_item
+function mero_cft:recipes/default_item_resume
 scoreboard players set @s PlayerCraftingSuccessedStatus 1
 
-function mero_cft:recipes/items/xp_potion/item
+function mero_cft:recipes/items/xp_potion/get
 ```
-您會注意到函數第一行呼叫了「default_decrease_item.mcfunction」，這個函數是預設函數，功能是使合成台內的所有物品減少1個。當然，您也可以在自己的資料包中自己編寫一個自定義的消耗函數並改由呼叫自己的消耗函數而不使用預設，但無論如何消耗函數必須在此呼叫而不可省略（除非您允許無限合成，但可能會發生一些小問題）。<br>
+您會注意到函數第一行呼叫了「default_item_resume.mcfunction」，這個函數是預設函數，功能是使合成台內的所有物品減少1個。當然，您也可以在自己的資料包中自己編寫一個自定義的消耗函數並改由呼叫自己的消耗函數而不使用預設，但無論如何消耗函數必須在此呼叫而不可省略（除非您允許無限合成，但可能會發生一些小問題）。<br>
 另外函數第二行也是不可省略的指令，它可以讓系統知道目前的合成工作已經完成了，不需要再繼續搜尋其他資料包的合成配方。
 # 更新版本歷史
 <detail>
-  <summary>v2.0</summary>
-  - 將資料包的遊戲運行版本從 1.20.4 提升至 1.21
-  - 「經驗藥水」的堆疊數量從1個提升為16個
+    <summary>v2.0</summary>
+    - 將資料包的遊戲運行版本從 1.20.4 提升至 1.21
+    - 「經驗藥水」的堆疊數量從1個提升為16個
 </detail>
 <detail>
-  <summary>v1.0</summary>
-  - 更新了 1 個挑戰成就
-  - 包含 3 個資料包物品
-  - 新增「一鍵合成」功能
-  - 添加例外事件處理 >>> 當合成檯、經驗產生器被意外破壞時啟動相關處理程序
-  - 針對更新至 1.20.4 的資料包「進度」改動內容進行修復
+    <summary>v1.0</summary>
+    - 更新了 1 個挑戰成就
+    - 包含 3 個資料包物品
+    - 新增「一鍵合成」功能
+    - 添加例外事件處理 >>> 當合成檯、經驗產生器被意外破壞時啟動相關處理程序
+    - 針對更新至 1.20.4 的資料包「進度」改動內容進行修復
 </detail>

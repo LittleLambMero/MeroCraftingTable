@@ -46,5 +46,5 @@
 ``execute if block ~ ~ ~ minecraft:dropper{Items: [{Slot: 1b, id: "minecraft:experience_bottle"}, {Slot: 3b, id: "minecraft:experience_bottle"}, {Slot: 4b, id: "minecraft:potion", components: {"minecraft:potion_contents": {potion: "minecraft:thick"}}}, {Slot: 5b, id: "minecraft:experience_bottle"}, {Slot: 6b, id: "minecraft:experience_bottle"}, {Slot: 7b, id: "minecraft:experience_bottle"}, {Slot: 8b, id: "minecraft:experience_bottle"}]} run function mero_cft:recipes/items/xp_potion/successed
 ``<br>
 而這是該配方表的模樣：<br>
-[https://imgur.com/ngTufgQ](https://imgur.com/ngTufgQ)
+![經驗藥水合成表](https://imgur.com/ngTufgQ)<br>
 您可以在**Minecraft Wiki**中找到相關的教學內容

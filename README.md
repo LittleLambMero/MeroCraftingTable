@@ -40,11 +40,13 @@
 ## 如何設定配方表
 由於本資料包的「合成台」使用了原版的投擲器，因此配方表函數（此處稱為「recipe.mcfunction」）必須要能夠偵測投擲器中的物品內容。以本資料包的「經驗藥水」為例：<br>
 【1.21以下】<br>
-``execute if block ~ ~ ~ minecraft:dropper{Items: [{Slot: 1b, id: "minecraft:experience_bottle"}, {Slot: 3b, id: "minecraft:experience_bottle"}, {Slot: 4b, id: "minecraft:potion", tag: {Potion: "minecraft:thick"}}, {Slot: 5b, id: "minecraft:experience_bottle"}, {Slot: 6b, id: "minecraft:experience_bottle"}, {Slot: 7b, id: "minecraft:experience_bottle"}, {Slot: 8b, id: "minecraft:experience_bottle"}]} run function mero_cft:recipes/items/xp_potion/successed
-``<br>
+```mcfunction
+execute if block ~ ~ ~ minecraft:dropper{Items: [{Slot: 1b, id: "minecraft:experience_bottle"}, {Slot: 3b, id: "minecraft:experience_bottle"}, {Slot: 4b, id: "minecraft:potion", tag: {Potion: "minecraft:thick"}}, {Slot: 5b, id: "minecraft:experience_bottle"}, {Slot: 6b, id: "minecraft:experience_bottle"}, {Slot: 7b, id: "minecraft:experience_bottle"}, {Slot: 8b, id: "minecraft:experience_bottle"}]} run function mero_cft:recipes/items/xp_potion/successed
+```
 【1.21以上】<br>
-``execute if block ~ ~ ~ minecraft:dropper{Items: [{Slot: 1b, id: "minecraft:experience_bottle"}, {Slot: 3b, id: "minecraft:experience_bottle"}, {Slot: 4b, id: "minecraft:potion", components: {"minecraft:potion_contents": {potion: "minecraft:thick"}}}, {Slot: 5b, id: "minecraft:experience_bottle"}, {Slot: 6b, id: "minecraft:experience_bottle"}, {Slot: 7b, id: "minecraft:experience_bottle"}, {Slot: 8b, id: "minecraft:experience_bottle"}]} run function mero_cft:recipes/items/xp_potion/successed
-``<br>
+```mcfunction
+execute if block ~ ~ ~ minecraft:dropper{Items: [{Slot: 1b, id: "minecraft:experience_bottle"}, {Slot: 3b, id: "minecraft:experience_bottle"}, {Slot: 4b, id: "minecraft:potion", components: {"minecraft:potion_contents": {potion: "minecraft:thick"}}}, {Slot: 5b, id: "minecraft:experience_bottle"}, {Slot: 6b, id: "minecraft:experience_bottle"}, {Slot: 7b, id: "minecraft:experience_bottle"}, {Slot: 8b, id: "minecraft:experience_bottle"}]} run function mero_cft:recipes/items/xp_potion/successed
+```
 而這是該配方表的模樣：<br>
 ![經驗藥水合成表](https://i.imgur.com/ngTufgQ.png)<br>
 您可以在**Minecraft Wiki**中找到相關的教學內容

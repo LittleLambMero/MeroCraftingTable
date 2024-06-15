@@ -30,7 +30,7 @@
 # 開發者專區
 ## 關於自定義合成配方
 其他資料包也可以在此資料包註冊自己的合成配方函數來達成物品合成的功能，以下提供操作步驟（建議）：（以下使用「資料包A」做代稱）
-1. 為了方便配方表管理，請在 A 的「function(**1.21以上**)／functions（**1.21以下**）」資料夾建立一個「recipes」資料夾
+1. 為了方便配方表管理，請在 A 的「function（**1.21以上**）／functions（**1.21以下**）」資料夾建立一個「recipes」資料夾
 2. 在 recipes 中建立「branch.mcfunction」或任意名稱的函數作為管理所有配方表函數的總函數
 3. 在本資料包中的「recipes/register.mcfunction」函數中向下新增指令，舉例如下：<br>
 ``execute if score @s PlayerCraftingSuccessedStatus matches 1 run return 0``<br>

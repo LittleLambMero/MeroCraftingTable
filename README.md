@@ -39,7 +39,8 @@ execute if score @s PlayerCraftingSuccessedStatus matches 1 run return 0
 function example:recipes/branch
 ```
 4. branch 函數需要呼叫資料包A的所有合成配方，這裡由開發者自行發揮
-<br>更詳細的例子可以直接參考本資料包中的函數結構，也許能幫助到您。
+
+更詳細的例子可以直接參考本資料包中的函數結構，也許能幫助到您。
 ## 如何設定配方表
 由於本資料包的「合成台」使用了原版的投擲器，因此配方表函數（此處稱為「recipe.mcfunction」）必須要能夠偵測投擲器中的物品內容。以本資料包的「經驗藥水」為例：<br>
 【1.21以下】<br>

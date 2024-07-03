@@ -65,6 +65,14 @@ function mero_cft:recipes/items/xp_potion/get
 另外函數第二行也是不可省略的指令，它可以讓系統知道目前的合成工作已經完成了，不需要再繼續搜尋其他資料包的合成配方。
 # 更新版本歷史
 <details>
+    <summary>v2.1</summary>
+    
+    - 修正「經驗藥水」的合成表Bug
+    
+    - 修正一些指令語法
+    
+</details>
+<details>
     <summary>v2.0</summary>
     
     - 將資料包的遊戲運行版本從 1.20.4 提升至 1.21

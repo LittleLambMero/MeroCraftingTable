@@ -104,6 +104,12 @@ function mero_cft:recipes/items/xp_potion/get
 # 更新版本歷史
 
 <details>
+    <summary>v2.2</summary>
+
+    - 修正合成台合成之後，物品減少會出現的錯誤
+
+</details>
+<details>
     <summary>v2.1</summary>
 
     - 修正「經驗藥水」的合成表Bug

@@ -104,6 +104,12 @@ function mero_cft:recipes/items/xp_potion/get
 # 更新版本歷史
 
 <details>
+    <summary>v2.3</summary>
+
+    - 現在可以用「蒼白橡木告示牌」來搭建合成台
+
+</details>
+<details>
     <summary>v2.2</summary>
 
     - 修正合成台合成之後，物品減少會出現的錯誤

@@ -10,3 +10,4 @@ execute if data entity @s Item{id: "minecraft:spruce_sign", count: 1} run functi
 execute if data entity @s Item{id: "minecraft:crimson_sign", count: 1} run function mero_cft:main/constructor/structure/build/sign_type/crimson
 execute if data entity @s Item{id: "minecraft:dark_oak_sign", count: 1} run function mero_cft:main/constructor/structure/build/sign_type/dark_oak
 execute if data entity @s Item{id: "minecraft:mangrove_sign", count: 1} run function mero_cft:main/constructor/structure/build/sign_type/mangrove
+execute if data entity @s Item{id: "minecraft:pale_oak_sign", count: 1} run function mero_cft:main/constructor/structure/build/sign_type/pale_oak_sign

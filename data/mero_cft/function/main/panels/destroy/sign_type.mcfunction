@@ -9,3 +9,4 @@ execute if block ~ ~1 ~ minecraft:mangrove_wall_sign run summon minecraft:item ~
 execute if block ~ ~1 ~ minecraft:oak_wall_sign run summon minecraft:item ~ ~1 ~ {Item: {id: "minecraft:oak_sign", count: 1}, PickupDelay: 60s, Tags: ["MeroCraftingTable_NotMaterial"]}
 execute if block ~ ~1 ~ minecraft:spruce_wall_sign run summon minecraft:item ~ ~1 ~ {Item: {id: "minecraft:spruce_sign", count: 1}, PickupDelay: 60s, Tags: ["MeroCraftingTable_NotMaterial"]}
 execute if block ~ ~1 ~ minecraft:warped_wall_sign run summon minecraft:item ~ ~1 ~ {Item: {id: "minecraft:warped_sign", count: 1}, PickupDelay: 60s, Tags: ["MeroCraftingTable_NotMaterial"]}
+execute if block ~ ~1 ~ minecraft:pale_oak_wall_sign run summon minecraft:item ~ ~1 ~ {Item: {id: "minecraft:pale_oak_sign", count: 1}, PickupDelay: 60s, Tags: ["MeroCraftingTable_NotMaterial"]}

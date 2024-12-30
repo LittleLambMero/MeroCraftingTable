@@ -10,3 +10,4 @@ execute if data entity @s Item{id: "minecraft:spruce_sign", count: 1} run tag @s
 execute if data entity @s Item{id: "minecraft:crimson_sign", count: 1} run tag @s add MeroCraftingTable_Material_C
 execute if data entity @s Item{id: "minecraft:dark_oak_sign", count: 1} run tag @s add MeroCraftingTable_Material_C
 execute if data entity @s Item{id: "minecraft:mangrove_sign", count: 1} run tag @s add MeroCraftingTable_Material_C
+execute if data entity @s Item{id: "minecraft:pale_oak_sign", count: 1} run tag @s add MeroCraftingTable_Material_C
